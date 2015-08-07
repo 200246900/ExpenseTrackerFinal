@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Assignment2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="cost_tracking">
+    <Key>
+      <PropertyRef Name="EntryID" />
+    </Key>
+    <Property Name="EntryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="bills" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="food" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="media" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="clothing" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="travel" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="other" Type="Decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="Assignment2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cost_tracking" EntityType="Self.cost_tracking" />
+  </EntityContainer>
+</Schema>

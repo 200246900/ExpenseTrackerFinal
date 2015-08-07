@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Assignment2ModelStoreContainer" CdmEntityContainer="Assignment2Entities">
+    <EntitySetMapping Name="cost_tracking">
+      <EntityTypeMapping TypeName="Assignment2Model.cost_tracking">
+        <MappingFragment StoreEntitySet="cost_tracking">
+          <ScalarProperty Name="EntryID" ColumnName="EntryID" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="bills" ColumnName="bills" />
+          <ScalarProperty Name="food" ColumnName="food" />
+          <ScalarProperty Name="media" ColumnName="media" />
+          <ScalarProperty Name="clothing" ColumnName="clothing" />
+          <ScalarProperty Name="travel" ColumnName="travel" />
+          <ScalarProperty Name="other" ColumnName="other" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

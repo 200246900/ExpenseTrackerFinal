@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Assignment2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="cost_tracking">
+    <Key>
+      <PropertyRef Name="EntryID" />
+    </Key>
+    <Property Name="EntryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="bills" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="food" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="media" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="clothing" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="travel" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="other" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="Assignment2ModelStoreContainer">
+    <EntitySet Name="cost_tracking" EntityType="Self.cost_tracking" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
